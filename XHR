@@ -1,0 +1,25 @@
+XMLHttpRequest (XHR), web tarayıcılarında kullanılan bir JavaScript nesnesidir ve HTTP istekleri göndermek ve almak için kullanılır.
+XHR, web sayfalarının veri alışverişi yapmasına ve asenkron olarak sunucu ile iletişim kurmasına olanak tanır.
+İşte XMLHttpRequest'in temel özellikleri ve nasıl kullanıldığına dair açıklama:
+
+Asenkron İstekler: XHR, asenkron (senkron olmayan) bir şekilde çalışır.
+Bu, tarayıcının isteği gönderdikten sonra diğer işlemleri beklemeksizin sayfanın çalışmasına devam etmesini sağlar.
+Sunucudan yanıt geldiğinde ise belirtilen işlevler çalıştırılabilir.
+
+HTTP İstekleri: XHR, temel olarak HTTP istekleri (GET, POST, PUT, DELETE vb.) göndermek ve yanıtları almak için kullanılır.
+Bu, web sayfalarının sunucularla veri alışverişi yapmasını sağlar.
+Örneğin, kullanıcıdan bir formu doldurduktan sonra bu bilgileri sunucuya göndermek için XHR kullanılabilir.
+
+Veri Alışverişi: XHR ile metin, JSON, XML veya diğer veri türlerini sunucudan alabilirsiniz.
+Alınan veriyi daha sonra web sayfanızda gösterebilir veya işleyebilirsiniz.
+
+Olay Tabanlı: XHR, olay tabanlı bir yapı kullanır.
+İstek gönderme işlemi tamamlandığında veya hata oluştuğunda belirtilen olay dinleyicileri tetiklenir.
+Bu, yanıtları işlemek ve hataları ele almak için kullanışlıdır.
+
+Çapraz Alan İstekler (Cross-Origin Requests): XHR, varsayılan olarak aynı kök etki alanı içinde çalışan sayfalarda kullanılır.
+Ancak, CORS (Cross-Origin Resource Sharing) kurallarına uygun olarak yapılandırıldığında, farklı kök etki alanlarına da istekler gönderilebilir.
+
+XHR, web uygulamalarının dinamik ve veri odaklı olmasını sağlayan önemli bir teknolojidir.
+Ancak, modern web geliştirme için daha yeni ve güçlü API'lar, özellikle Fetch API ve Promises, XHR'nin yerini almıştır.
+Bu nedenle, yeni projelerde Fetch API kullanımı daha yaygın hale gelmiştir.
