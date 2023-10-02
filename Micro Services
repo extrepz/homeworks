@@ -1,0 +1,34 @@
+Mikro hizmetler (Microservices), bir yazılım uygulamasının geliştirme ve dağıtımını daha küçük, bağımsız, özgün ve ölçeklendirilebilir hizmetlere bölen bir yazılım tasarım yaklaşımıdır.
+Geleneksel monolitik uygulamalardan farklı olarak, mikro hizmetler yaklaşımı, bir uygulamayı bir dizi küçük ve özerk hizmete ayırarak karmaşıklığı azaltmayı ve geliştirme süreçlerini hızlandırmayı amaçlar.
+
+Mikro hizmetlerin temel özellikleri şunlardır:
+
+1. **Bağımsızlık:** Her mikro hizmet, kendine özgü bir işlevi yerine getirir ve bağımsız olarak geliştirilebilir, dağıtılabilir ve ölçeklendirilebilir.
+Bu, farklı hizmetlerin farklı hızlarda ve teknolojilerle geliştirilebileceği anlamına gelir.
+
+2. **Özgünlik:** Her mikro hizmet, belirli bir işlevi yerine getirir ve bu işlevi en iyi şekilde yerine getirmek için özgün bir tasarım ve teknoloji kullanabilir.
+Bu, her hizmetin spesifik gereksinimlere ve kullanım senaryolarına uygun olmasını sağlar.
+
+3. **Bağlantısızlık:** Mikro hizmetler, birbirleriyle asenkron veya senkron iletişim kurabilirler, ancak bağlantısız olarak çalışırlar.
+Bu, bir hizmetin hata yapması veya çökmesi durumunda diğer hizmetlerin etkilenmemesini sağlar.
+
+4. **API'lerle İletişim:** Mikro hizmetler, birbirleriyle API'ler (Application Programming Interfaces) aracılığıyla iletişim kurarlar.
+Bu, hizmetlerin birbiriyle haberleşmesini ve veri paylaşmasını sağlar.
+
+5. **Bağımsız Dağıtım:** Her hizmet, bağımsız olarak dağıtılabilir ve çalıştırılabilir.
+Bu, yeni bir özellik eklemek veya bir hizmeti güncellemek için diğer hizmetlere dokunmaya gerek olmadığı anlamına gelir.
+
+Mikro hizmetlerin avantajları şunlar olabilir:
+
+- Hızlı Geliştirme: Her hizmet bağımsız olarak geliştirilebilir, bu da hızlı ve esnek geliştirme süreçleri sağlar.
+
+- Ölçeklendirme: Hizmetler, ihtiyaçlar doğrultusunda bağımsız olarak ölçeklendirilebilir.
+
+- Kolay Bakım: Tek bir hizmetin bakımı veya güncellenmesi diğerlerini etkilemez.
+
+- Teknoloji Çeşitliliği: Farklı hizmetler farklı teknolojileri kullanabilir.
+
+- Hata İzolasyonu: Bir hizmetin hatası diğerlerini etkilemez.
+
+Ancak, mikro hizmetler yaklaşımı, daha fazla karmaşıklık ve yönetim gerektirebilir ve uygun bir altyapı ve otomasyonun gerekliliğini artırabilir.
+Bu nedenle, uygulanırken dikkatli bir planlama ve yönetim gerektirir.
