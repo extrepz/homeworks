@@ -1,0 +1,64 @@
+/HTTP(Hyper Text Transfer Protocol) durum kodları (status codes)  istemci yani web tarayıcı ile sunucu arasındaki iletişim sürecinde neler olduğunu açıklayan, 3 haneli bir sayıdır.\
+  Bilgilendirici (Informational)(1xx):
+     100 Tarayıcının sunucuya gönderdiği istek başlığının sunucu tarafından alındığını ve istek gövdesinin de alınmaya hazır olduğu anlamına gelir.
+     101 Tarayıcının sunucudan protokol değiştirmesini istediği ve sunucunun da bu isteği kabul ettiği anlamına gelir.
+  Başarılı (Successful)(2xx):
+     200 Tarayıcı ve sunucu tarafında her şeyin yolunda olduğu anlamına gelen ideal durum kodudur.
+     201 Sunucu tarafından isteğin yerine getirildiği ve yeni bir kaynak oluşturulduğu anlamına gelir. 
+     202 Sunucunun tarayıcıdan gelen isteği kabul ettiği ve işleme koyduğu anlamına gelir.
+     203 Kaynak sunucudan 200 durum kodu alınmasına rağmen işlem sırasında kaynağın yanıtı değiştirdiği anlamına gelir.
+     204 Sunucunun isteği başarıyla işlediği fakat herhangi bir içerik döndürmeyeceğini ifade eder.
+     205 İçerik Yok: 204 durum kodu gibi isteğin başarıyla işlendiği fakat herhangi bir içeriğin döndürülmeyeceği anlamına gelir. 
+         Ancak tarayıcının belge görünümünü sıfırlaması gerekir.
+     206 Tarayıcının durdurulmuş indirmelere devam etmesini ve indirmeleri birden fazla akışa ayırmasını sağlayan durum kodudur.
+  Yönlendirme (Redirection)(3xx):
+     300 Çoktan Seçmeli:Tarayıcının isteğini yerine getirmek için sunucunun birden fazla olası kaynağa sahip olduğu 
+         ve bu kaynaklar arasında seçim yapması gerektiği anlamına gelir.
+     301 Bir web sayfası ya da bir kaynağın kalıcı olarak farklı bir kaynağa taşındığını ifade eden durum kodudur.
+     302 Bir web sayfası ya da bir kaynağın geçici olarak farklı bir kaynağa taşındığını ifade eden durum kodudur.
+     303 POST, PUT ya da DELETE aracılığıyla tarayıcının talep ettiği kaynağın bulunduğu anlamına gelir. 
+         GET kullanarak kaynağı almak için farklı bir URL’ye istekte bulunulması gerekir.
+     304 Tarayıcıya önbelleğinde depolanan kaynakların değişmediğini belirten durum kodudur.
+     307 Bir kaynağın geçici olarak farklı bir kaynağa taşındığını ifade eden durum kodudur. 
+         302 durum kodundan farklı olarak HTTP yönetiminin değişmesine izin vermez.
+     308 Bir kaynağın kalıcı olarak farklı bir kaynağa taşındığını ifade eden durum kodudur.
+         301 durum kodundan farklı olarak HTTP yönetiminin değişmesine izin vermez.
+  İstemci Hatası (Client Error)(4xx):
+     400 Sunucunun tarayıcıdaki hata nedeniyle isteği işleyemediği anlamına gelen durum kodudur.
+     401 Kullanıcının erişmek istediği kaynak için geçerli kimlik doğrulama bilgilerine sahip olmadığında döndürülen durum kodudur.
+     402 Ödeme gerektiği ve gelecekte kullanılmak üzere rezerve edildiği anlamına gelen durum kodudur.
+     403 İlgili kaynağa erişimin yasak olduğu durumlarda döndürülen durum kodudur.
+     404 İstenen kaynağın sunucuda bulunmadığını ifade eden durum kodudur. En sık görülen HTTP durum kodlarının başında gelmektedir.
+     405 İstenilen kaynak için gerçekleştirilen istek yöntemi desteklenmediğinde döndürülen durum kodudur.
+     406 İstemcinin Accept Header bölümünde verilen özelliklerin karşılanmadığını ifade eden durum kodudur. 
+     407 Bir proxy sunucu ile kimlik doğrulaması ve yetkilendirme gereken durumlarda döndürülen durum kodudur.
+     408 Sunucunun isteği beklerken zaman aşımına uğraması durumunda karşılaşılan durum kodudur.
+     409 Bir uyuşmazlık ya da çakışma olması nedeniyle isteğin tamamlanamadığı anlamına gelen durum kodudur.
+     410 İstenen kaynağın kalıcı olarak o sunucuda bulunmadığı anlamına gelen durum kodudur.
+     411 İstenen kaynak için belirli bir uzunluk belirtilmediği anlamına gelen durum kodudur.
+     412 İstekte bulunan ön koşulların sunucu tarafından karşılanamadığı anlamına gelen durum kodudur.
+     413 Yapılan isteğin boyutunun çok büyük olması nedeniyle işlenemediği ve sunucunun isteği kabul edemediği anlamına gelir.
+     414 Sunucunun işleyemeyeceği kadar büyük bir sorgu dizesi olarak kodlanmış GET isteği olduğu durumlarda karşılaşılan durum kodudur.
+     415 Gelen isteğin sunucu tarafından desteklenmeyen bir ortam türü içerdiği anlamına gelen durum kodudur.
+     416 Dosyanın istenilen bir bölümünü sunucunun sağlayamaması durumunda karşılaşılan durum kodudur.
+     417 Sunucunun isteğin bekleme başlığı alanındaki gereksinimleri karşılayamaması durumunda karşılaşılan durum kodudur. 
+     422 Anlamsal hata içeren istekleri sunucunun işleyemediği anlamına gelen durum kodudur.
+     425 Sunucunun yeniden oynatılabilecek istekleri işleme riskini almadığı durumlarda ortaya çıkan durum kodudur.
+     426 İsteğin yükseltme başlığı alanındaki içerikten dolayı farklı bir protokole geçilmesi gereken durumlarda karşılaşılan durum kodudur.
+     428 Sunucu isteği işlemeden önce koşulların belirlenmesi gerektiği anlamına gelen durum kodudur.
+     429 Kullanıcı belirli  bir süre içerisinde çok fazla istek gönderdiğinde sunucu tarafından hız sınırlayıcı oluşturulduğu anlamına gelen durum kodudur.
+     431 Üst bilgi alanlarının büyük olması nedeniyle sunucunun isteği işleyememesi anlamında gelen durum kodudur.
+  Sunucu Hatası (Server Error)(5xx):
+     500 Sunucudaki sorun nedeniyle isteğin tamamlanamadığı durumlarda görülen durum kodudur.
+     501 Sunucunun isteği yönetemediği ya da işlevleri destekleyemediği anlamında gelen durum kodudur.
+     502 Sunucunun başka bir sunucuya istek gönderdikten sonra geçersiz yanıt aldığı anlamına gelen durum kodudur.
+     503 Sunucunun geçici olarak hizmet veremediği ve istekleri işleyemediği durumlarda görülen durum kodudur.
+     504 Bir isteği işlerken bir sunucunun diğer sunucudan yanıt beklerken isteğin zaman aşımına uğraması durumunda görülen durum kodudur.
+     505 HTTP protokol sürümünün desteklenemediği anlamında gelen durum kodudur.
+     511 Kullanılmak istenen ağın isteği sunucuya iletmeden önce kimlik doğrulaması yapması gerektiği durumlarda görülen durum kodudur.
+
+Bu durum kodları, hem istemcilerin (web tarayıcıları gibi) hem de sunucuların bir isteğin başarısı veya başarısızlığı hakkında iletişim kurmasına yardımcı olur.
+Örneğin, web tarayıcınızla bir web sayfası (HTML belgesi) talep ettiğinizde, sunucu, HTML içeriğiyle birlikte uygun bir durum koduyla yanıt verecektir.
+İstek başarılı olursa, genellikle isteğin başarılı olduğunu belirten 200 OK durum kodunu alırsınız ve HTML içeriği yanıta dahil edilir.
+
+HTML'nin kendisinde durum kodları yoktur; istemci ile sunucu arasındaki iletişimi yöneten HTTP protokolüdür ve durum kodları bu protokolün bir parçasıdır.
