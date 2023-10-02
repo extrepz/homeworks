@@ -1,0 +1,14 @@
+"href="#B1"" ifadesi, HTML belgesinde bir bağlantının (linkin) hedefini belirlemek için kullanılan bir özelliktir.
+Bu ifade, tarayıcıya bağlantının nereye yönlendirilmesi gerektiğini söyler. Şimdi bu ifadeyi daha ayrıntılı bir şekilde açıklayalım:
+
+"href": HTML'de bir bağlantının (linkin) hedefini belirlemek için kullanılan özelliktir.
+"href" (hypertext reference) kısaltmasıdır ve bağlantının nereye gitmesi gerektiğini belirtir.
+
+"#B1": Bu ifade, belirli bir hedefi gösterir.
+"#", sayfa içi bağlantıları temsil eder ve "B1" ise hedefin adıdır.
+Yani, bu bağlantı, aynı web sayfasının içindeki bir öğeye yönlendirme yapar.
+"B1" adı, genellikle bir HTML öğesinin (örneğin, bir bölümün veya bir div'in) "id" özelliğiyle eşleşir.
+Bu nedenle, tıklanan bağlantı, sayfa içinde ilgili "B1" adlı öğeyi bulur ve bu öğeye kaydırır veya odaklanır.
+
+Özetle, "href="#B1"" ifadesi, bir bağlantının aynı sayfadaki belirli bir öğeye yönlendirilmesini sağlar.
+Bu, sayfa içi gezinti ve kullanıcı deneyimi için oldukça kullanışlı bir HTML özelliğidir.
