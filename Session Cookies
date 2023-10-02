@@ -1,0 +1,19 @@
+Session cookies, web tarayıcıları ve web sunucuları arasında geçici bilgi depolamak için kullanılan çerezlerdir.
+Oturum çerezleri, bir kullanıcının bir web sitesi ziyareti sırasında tarayıcıda geçerli olan ve oturum sona erdiğinde otomatik olarak silinen çerezlerdir.
+Bu çerezler, kullanıcının web sitesi ile etkileşimde bulunurken geçici bilgileri depolamak için kullanılır ve kullanıcının oturumu sırasında web sitesinin sorunsuz çalışmasına yardımcı olur.
+
+İşte oturum çerezlerinin temel özellikleri:
+
+1. **Geçici Olma:** Oturum çerezleri, kullanıcının tarayıcı oturumu boyunca geçerli olan çerezlerdir.
+Kullanıcı tarayıcıyı kapatıp açtığında veya oturumu sona erdiğinde bu çerezler otomatik olarak silinir.
+Bu, kullanıcının tarayıcıyı kapattığında veya belirli bir süre boyunca inaktif kaldığında otomatik olarak oturumun sonlandığını ve çerezlerin temizlendiğini gösterir.
+
+2. **Kullanıcı Kimliği:** Oturum çerezleri, kullanıcının kimliğini belirlemek veya oturum bilgilerini depolamak için kullanılır.
+Özellikle web uygulamalarında, kullanıcının oturumunu açık tutmak ve kullanıcıyı kimlik doğrulama süreçlerinden geçirmemek için kullanışlıdır.
+
+3. **Güvenlik:** Oturum çerezleri, kullanıcının oturumu boyunca geçici verileri sakladığından, kullanıcının tekrar tekrar kimlik doğrulama bilgilerini girmesini engelleyerek kullanıcı deneyimini iyileştirir.
+
+4. **Sunucu Taraflı:** Oturum çerezleri genellikle sunucu tarafından oluşturulur ve yönetilir. Kullanıcının tarayıcıya saklanan bu çerezlerle doğrudan etkileşimi yoktur.
+
+Oturum çerezleri, kullanıcıların web siteleri arasında gezinirken oturumlarını sürdürmelerini ve kullanıcı deneyimini geliştirmelerini sağlar.
+Ancak, hassas bilgileri (örneğin, parolalar) oturum çerezlerine depolamak güvenlik nedenleriyle önerilmez. Bu tür bilgiler daha güvenli bir şekilde saklanmalıdır.
